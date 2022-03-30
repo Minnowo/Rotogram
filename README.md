@@ -49,7 +49,7 @@ Steps:
 - Save the config from above, then **start** for both Apache and MySQL  
 - Click **Admin** next to MySQL, then **new** and make a database named **rotogram** with **utf8_general_ci** encoding  
 - Click the database on the left and hit **import** at the top, then **browse** and choose [user.sql](database/users.sql), then hit **go**  
-- Clone the repo into the folder you chose to run PHP and then navigate to [localhost](https://localhost/)  
-- You should then be able to enter the **src** directory and index.php should load the game  
+- Clone the repo into the folder you chose to run PHP and then navigate to [localhost](http://localhost/)  
+- You should see the git repo, enter that and then the **src** directory and index.php should load the game  
 - Signup and login, and you're done  
 
