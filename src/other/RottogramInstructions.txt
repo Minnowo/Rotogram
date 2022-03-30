@@ -1,0 +1,25 @@
+In order to play the game Rottogram
+
+Download xampp
+	https://www.apachefriends.org/download.html
+open file explorer
+create a folder and call it "php"
+open folder and create a folder called "database"
+open that and paste all the Rottogram files
+Open xampp
+	click Config next to Apache
+	click the first option
+	ctrl F and search for "DocumentRoot"
+	find where it says 
+		DocumentRoot "D:\\php"
+		<Directory "D:\\php">
+	and change whats in the brackets to whatever hardrive you want and the folder name
+
+
+	hit start next to Appache and MySQL
+	hit Admin next to MySQL
+
+in phpMyAdmin hit new
+put the database name as "gameisu"
+change latin1+swedish_ci to utf8+general+ci and hit create
+then select the databse and hit import at the top choose the download .sql file and hit go
