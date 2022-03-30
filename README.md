@@ -36,3 +36,20 @@ There is a very clear meta in this game, this is because there's a best weapon, 
 - Apple Cloak / Gravity Cloak
 
 These items are vital to actually killing the final bosses, this is because the combat in the game is very RNG relient. The **Shield** is a very strong item that has a 1/2 chance of completely blocking all damage. This makes surviving the final boss much easier. **Shelly's Love** is a healing item which heals 1-5 HP every time the user inputs a command, this being the only passive healing item in the game makes it very strong. The **Axe** is good because it has the highest damage of all the weapons, and the **Apple Cloack** and **Gravity Cloak** both give the play an extra 100 HP.
+
+
+## Running The Game
+
+The game is written entirely in PHP with a MySQL database, I used [Xampp](https://www.apachefriends.org/download.html) but you can probably use anything. 
+
+Steps:  
+- Install [Xampp](https://www.apachefriends.org/download.html) (you need Apache and MySQL)  
+- Run the Xampp Control Panel  
+- Click **Config** for Apache, then click **Apache (httpd.conf)**, ctrl+f **DocumentRoot** and change the value of this and the **<Directory "C:\\..">** to the folder you want to run PHP  
+- Save the config from above, then **start** for both Apache and MySQL  
+- Click **Admin** next to MySQL, then **new** and make a database named **rotogram** with **utf8_general_ci** encoding  
+- Click the database on the left and hit **import** at the top, then **browse** and choose [user.sql](database/users.sql), then hit **go**  
+- Clone the repo into the folder you chose to run PHP and then navigate to [localhost](https://localhost/)  
+- You should then be able to enter the **src** directory and index.php should load the game  
+- Signup and login, and you're done  
+
