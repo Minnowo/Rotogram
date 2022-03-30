@@ -14,7 +14,7 @@ Rotogram is a text based adventure game. It's nothing special, you get informati
 **Save**    - Saves progress  
 **Logout**  - Logouts of the game (close the session)  
 **Restart** - Restarts the playthrough  
-**Help**    - Lists page 1 of commands 
+**Help**    - Lists page 1 of commands  
 **Help2**   - Lists page 2 of commands 
 
 #### Core Gameplay 
