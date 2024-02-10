@@ -40,16 +40,22 @@ These items are vital to actually killing the final bosses, this is because the 
 
 ## Running The Game
 
-The game is written entirely in PHP with a MySQL database, I used [Xampp](https://www.apachefriends.org/download.html) but you can probably use anything. 
+There is a `compose.yml` file, so you can just run `docker compose up` and it should handle everything.
 
-Steps:  
-- Install [Xampp](https://www.apachefriends.org/download.html) (you need Apache and MySQL)  
-- Run the Xampp Control Panel  
-- Click **Config** for Apache, then click **Apache (httpd.conf)**, ctrl+f **DocumentRoot** and change the value of this and the **<Directory "C:\\..">** to the folder you want to run PHP  
-- Save the config from above, then **start** for both Apache and MySQL  
-- Click **Admin** next to MySQL, then **new** and make a database named **rotogram** with **utf8_general_ci** encoding  
-- Click the database on the left and hit **import** at the top, then **browse** and choose [user.sql](database/users.sql), then hit **go**  
-- Clone the repo into the folder you chose to run PHP and then navigate to [localhost](http://localhost/)  
-- You should see the git repo, enter that and then the **src** directory and index.php should load the game  
-- Signup and login, and you're done  
+Once the containers are up and running go to [localhost](http://localhost) to play the game. 
+
+You will need to register an account to play, just enter anything, but make sure you wait at least 1 minute before trying to register while the database does its thing.
+
+~~The game is written entirely in PHP with a MySQL database, I used [Xampp](https://www.apachefriends.org/download.html) but you can probably use anything.~~
+
+~~Steps:~~
+~~- Install [Xampp](https://www.apachefriends.org/download.html) (you need Apache and MySQL)~~
+~~- Run the Xampp Control Panel~~
+~~- Click **Config** for Apache, then click **Apache (httpd.conf)**, ctrl+f **DocumentRoot** and change the value of this and the **<Directory "C:\\..">** to the folder you want to run PHP~~
+~~- Save the config from above, then **start** for both Apache and MySQL~~
+~~- Click **Admin** next to MySQL, then **new** and make a database named **rotogram** with **utf8_general_ci** encoding~~
+~~- Click the database on the left and hit **import** at the top, then **browse** and choose [user.sql](database/users.sql), then hit **go**~~
+~~- Clone the repo into the folder you chose to run PHP and then navigate to [localhost](http://localhost/)~~
+~~- You should see the git repo, enter that and then the **src** directory and index.php should load the game~~
+~~- Signup and login, and you're done~~
 
