@@ -1,0 +1,31 @@
+services:
+  maria_db:
+    image: mariadb:10.4.6
+    container_name: rotogram-db
+    ports:
+      - 3306:3306
+    volumes:
+      - ./database/users2.sql:/docker-entrypoint-initdb.d/dump.sql:ro
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: rotogram
+      MYSQL_DATABASE: rotogram
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+    networks:
+      - rotogram
+
+  rotogram_php:
+    build: .
+    container_name: rotogram-php
+    ports:
+      - 80:80
+    networks:
+      - rotogram
+
+
+networks:
+  rotogram:
+    name: rotogram-network
+    driver: bridge
+

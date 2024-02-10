@@ -1,6 +1,14 @@
 <?php
 session_start();
+
 error_reporting(0);
+
+/*
+ * uncomment for showing errors
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+*/
+
 if(isset($_SESSION['rottogram_user'])){
     include('dbc.php');
     //setting sessions

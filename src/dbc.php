@@ -1,3 +1,3 @@
 <?php 
- $dbc = mysqli_connect("localhost", "root", "", "rotogram") or DIE("bad connection");
+ $dbc = mysqli_connect("rotogram-db", "root", "root", "rotogram") or DIE("bad connection");
  ?>
